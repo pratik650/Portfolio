@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+#Maintag{
+  color: white;
+}
+#Typewriter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  transition: 0.5s;
+  font-size: 1.4em;
+  
+}
+
+
+#btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+#btn span {
+  padding: 15px;
+  transition: .5s;
+  position: relative;
+}
+#btn span:nth-child(1) {
+  color: #fff;
+  background: #262626;
+}
+#btn span:nth-child(2) {
+  color: #fff;
+  background: #ff3636;
+}
+#btn span:nth-child(1):before {
+  content: attr(data-attr);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ff3636;
+  padding: 15px;
+  transition: 0.5S;
+  transform-origin: top;
+  transform: rotateX(90deg) translateY(-50%);
+}
+#btn:hover span:nth-child(1):before {
+  transform: rotateX(0deg) translateY(0%);
+} 
+#btn span:nth-child(2):before {
+  content: attr(data-attr);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #262626;
+  padding: 15px;
+  transition: 0.5S;
+  transform-origin: bottom;
+  transform: rotateX(90deg) translateY(50%);
+}
+#btn:hover span:nth-child(2):before {
+  transform: rotateX(0deg) translateY(0%);
+} 
+#btn  span:nth-child(1):after {
+content: attr(data-attr);
+padding: 15px;
+position: absolute;
+top: 0;
+left: 0;
+background: #262626;
+transform-origin: bottom;
+transform: rotateX(0deg) translateY(0%);
+transition: 0.5s;
+}
+#btn:hover span:nth-child(1):after {
+transform: rotateX(90deg) translateY(50%);
+}
+#btn span:nth-child(2):after {
+  content: attr(data-attr);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ff3636;
+  padding: 15px;
+  transition: 0.5S;
+  transform-origin: top;
+  transform: rotateX(0deg) translateY(0%);
+}
+#btn:hover span:nth-child(2):after {
+  transform: rotateX(90deg) translateY(-50%);
+} 
+
