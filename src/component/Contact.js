@@ -3,16 +3,19 @@ import img1 from '../Images/deveoperlog.png'
 import img2 from '../Images/cross.png'
 import img5 from '../Images/boy.png'
 import './ContactStyle.css'
-
+import { Link,useNavigate } from 'react-router-dom'
 
 function Contact(){
+   const navigate = useNavigate();
   return (
     <div className="container-fluid" id="jst">
       
-        <div className="navbar">
-          <a href={"./home"}>
+        <div >
+          
+          <button id='btncross' onClick={() => navigate(-1)}>
             <img id="cross" className="img-fluid" src={img2} alt="Images" />
-          </a>
+            </button>
+         
         </div>
         <center>
           <img id="imgcontact" className="img-fluid" src={img5} alt="Images" />

@@ -1,6 +1,7 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
 import '../App.css'
+import { Link } from 'react-router-dom'
 
 
 export const HelloCode = () => {
@@ -17,7 +18,7 @@ export const HelloCode = () => {
 />
     </div>
     </h3>
-    <a id="btn" href={'/home'}><span data-attr="About">About</span><span data-attr="Me">Me</span></a>
+    <Link id="btn" to="/home"><span data-attr="About">About</span><span data-attr="Me">Me</span></Link>
     </center>
     </div>;
 }

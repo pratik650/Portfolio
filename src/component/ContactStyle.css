@@ -16,14 +16,17 @@ background-color: #1D1C1C;
 
 #imgcontact {
     width: 17rem;
+    
 }
 
 .formsection {
     padding: 10%;
 }
 
-#cross {
-    
+#btncross {
+    background-color: #1D1C1C;
+    border-color: #1D1C1C;
+    border: 0pc;
 }
 
 

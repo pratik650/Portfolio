@@ -5,7 +5,7 @@ import {Parallax} from "react-parallax"
 import video from '../Images/Hacker.mp4'
 import boydp from '../Images/boii2.png'
 import { Skill } from './Skill'
-
+import { Link } from 'react-router-dom'
 
 
 export const Home = () => {
@@ -16,8 +16,8 @@ export const Home = () => {
         <img id="pklogo" className="img-fluid" src={img} alt="Images" />
 
         {/* Say hello button at the top */}
-
-        <a href={"/contact"}>
+<Link to="/contact">
+       
           <div id="container">
             <button id="btn1" class="learn-more">
               <span class="circle" aria-hidden="true">
@@ -26,7 +26,8 @@ export const Home = () => {
               <span class="button-text">Say Hello</span>
             </button>
           </div>
-        </a>
+       
+        </Link>
       </div>
 
       <div className="ParallaxVideo">
