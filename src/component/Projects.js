@@ -14,13 +14,12 @@ export const Projects = () => {
       <div className="projects">
         <div className='projectlist'> 
         <ul>
-          <li>Smart India Hackathon Finalist</li>
-          <li>Codechef Executive Member</li>
-          <li>150+ questions on Geeks for Geeks</li>
+          <li>Student's Corner</li>
+          <li>Quiz Application</li>
+          <li>Spotify Clone</li>
         </ul>
         </div>
-        <img  className='img-fluid' id="projectimg" src={img7} alt="project img"/>
-        
+       
       </div>
       <Footer />
     </div>

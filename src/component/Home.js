@@ -1,10 +1,11 @@
 import React from 'react'
 import './HomeStyle.css'
 import img from '../Images/logo2.png'
-import img1 from '../Images/coderdpreal.png'
 import {Parallax} from "react-parallax"
 import video from '../Images/Hacker.mp4'
-import { Achievements } from './Achievements'
+import boydp from '../Images/boii2.png'
+import { Skill } from './Skill'
+
 
 
 export const Home = () => {
@@ -52,9 +53,8 @@ export const Home = () => {
               </p>
             </center>
    
-      
       </div>
-      <Achievements />
+      <Skill/>
       <div></div>
     </div>
   );
