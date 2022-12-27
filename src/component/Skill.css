@@ -1,9 +1,48 @@
-#Heading{
-    font-size: 1.8em;
-    color: #5DEDCC;
-    text-align: center;
-    justify-content: center;
-}
-#whatdo{
+#whatdo {
     background-color: #1D1C1C;
+}
+
+#boyimg center img {
+    min-width: 30%;
+    width: 20%;
+}
+
+header .typewriterh4 {}
+
+#Headingfordp1 {
+    padding: 1em;
+    margin: 20px;
+    border: 1px solid #00aeef;
+    border-radius: 5px;
+    border-style: groove;
+    margin-bottom: 2%;
+}
+
+#Headingfordp2 {
+    padding: 1em;
+    margin: 20px;
+    border: 1px solid #299f2f;
+    border-radius: 5px;
+    border-style: groove;
+    margin-bottom: 15%;
+}
+
+#head1 {
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+#head2 {
+    text-decoration: underline;
+    text-decoration-line: none;
+    margin-bottom: 30px;
+
+}
+
+#Headingfordp1 p {
+    color: #CDD6F7;
+}
+
+#Headingfordp2 p {
+    color: #CDD6F7;
 }

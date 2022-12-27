@@ -1,11 +1,10 @@
 import React from 'react'
 import './Projects.css'
-import img7 from '../Images/project.png'
-import { Footer } from './Footer';
+
 
 export const Projects = () => {
   return (
-    <div className="container-fluid" id="contmainer">
+    <div className="container-fluid" id="contmain">
       <center>
         <div className="project_header">
           <div className="Acheader">Project</div>
@@ -21,7 +20,6 @@ export const Projects = () => {
         </div>
        
       </div>
-      <Footer />
     </div>
   );
 }

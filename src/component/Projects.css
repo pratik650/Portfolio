@@ -2,15 +2,20 @@
 .projects{
     display: flex;
     flex-direction: row;
-    border-right: 2px solid #046307;
-    border-left: 2px solid #046307;
     justify-items: flex-end;
     margin: 0;
-    padding: 8%;
     background-color: #1D1C1C;
 }
 .projectlist{
-margin-top:6%;
+    margin: 0;
+    padding: 10%;
+    background-color: #1D1C1C;
+}
+
+.projectlist ul li{
+font-size: 1rem;
+list-style: square;
+color: #CDD6F7;
 }
 
 #contmainer{
@@ -25,12 +30,4 @@ margin-top:6%;
     align-items: center;
 }
 
-#icon1{
-    font-size: 1.5rem;
-    margin: 10px;
-}
 
-#projectimg{
-    margin-left: 25%;
-    width: 20rem ;
-}

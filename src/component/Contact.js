@@ -1,5 +1,4 @@
 import React from 'react'
-import img1 from '../Images/deveoperlog.png'
 import img2 from '../Images/cross.png'
 import img5 from '../Images/boy.png'
 import './ContactStyle.css'

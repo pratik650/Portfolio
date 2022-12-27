@@ -20,25 +20,17 @@
 #pklogo{
     padding:0.5em;
 }
-#coderpic {
-  padding-top: 5em;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-}
 
 #Introdiv{
   background-color: #1D1C1C;
-  border-right: 2px groove  #046307;
-  border-left: 2px solid #046307;
+
   margin: 0;
   padding: 15%;
 }
 
 #Paragraph{
   padding: 2em;
+  font-size: 1rem;
   border: 1px solid white;
   border-radius: 5px;
   border-style:groove;

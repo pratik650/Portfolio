@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 export const HelloCode = () => {
   return <div id="Maintag" className='container'>
     <center>
-      <h3>
+      <h4>
     <div id="Typewriter">
     <Typewriter
   options={{
@@ -17,7 +17,7 @@ export const HelloCode = () => {
   }}
 />
     </div>
-    </h3>
+    </h4>
     <Link id="btn" to="/home"><span data-attr="About">About</span><span data-attr="Me">Me</span></Link>
     </center>
     </div>;

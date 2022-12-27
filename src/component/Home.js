@@ -3,9 +3,9 @@ import './HomeStyle.css'
 import img from '../Images/logo2.png'
 import {Parallax} from "react-parallax"
 import video from '../Images/Hacker.mp4'
-import boydp from '../Images/boii2.png'
+import { Footer } from './Footer'
 import { Skill } from './Skill'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 
 export const Home = () => {
@@ -41,8 +41,7 @@ export const Home = () => {
 
       <div id="Introdiv">
         {/* Introdiv part 1 */}
-        
-        
+                
               <p id="heading">HEY, I'M PRATIK KUMBHKAR</p>
             
             <center>
@@ -56,7 +55,9 @@ export const Home = () => {
    
       </div>
       <Skill/>
-      <div></div>
+      
+      <Footer/>
+      
     </div>
   );
 }
