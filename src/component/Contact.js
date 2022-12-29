@@ -33,7 +33,7 @@ function Contact(){
       state:user.state,
       message:user.message
     }
-    axios.post('http://localhost:3001/contact',newNote).then((res)=>{
+    axios.post('https://potfolio-backend-q9ga.vercel.app/contact',newNote).then((res)=>{
 console.log(res);
 alert("Your Response has been recorded successfuly");
     }).catch((error)=>{
