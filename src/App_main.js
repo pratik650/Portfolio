@@ -4,6 +4,7 @@ import App from "./App";
 import { Home } from "./component/Home";
 import  Contact   from "./component/Contact";
 
+
 export default function AppMain() {
 
   return (

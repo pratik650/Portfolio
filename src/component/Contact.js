@@ -1,31 +1,67 @@
 import React from 'react'
 import img2 from '../Images/cross.png'
 import img5 from '../Images/boy.png'
+import { useState } from 'react'
+import axios from 'axios'
 import './ContactStyle.css'
 import { Link,useNavigate } from 'react-router-dom'
 
 function Contact(){
-   const navigate = useNavigate();
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    city: "",
+    state: "",
+    message: "",
+  });
+
+  let name, value;
+  const handleInputs = (e) => {
+    console.log(e);
+    name = e.target.name;
+    value = e.target.value;
+
+    setUser({ ...user, [name]: value });
+  };
+
+  const PostData = async (e) => {
+    e.preventDefault();
+    const newNote ={
+      name :user.name,
+      email:user.email,
+      city:user.city,
+      state:user.state,
+      message:user.message
+    }
+    axios.post('http://localhost:3001/contact',newNote).then((res)=>{
+console.log(res);
+alert("Your Response has been recorded successfuly");
+    }).catch((error)=>{
+      console.log(error)
+      alert("Some error occured")
+    })
+  };
+
+  const navigate = useNavigate();
+
   return (
     <div className="container-fluid" id="jst">
-      
-        <div >
-          
-          <button id='btncross' onClick={() => navigate(-1)}>
-            <img id="cross" className="img-fluid" src={img2} alt="Images" />
-            </button>
-         
-        </div>
-        <center>
-          <img id="imgcontact" className="img-fluid" src={img5} alt="Images" />
-        </center>
-      
+      <div>
+        <button id="btncross" onClick={() => navigate(-1)}>
+          <img id="cross" className="img-fluid" src={img2} alt="Images" />
+        </button>
+      </div>
+      <center>
+        <img id="imgcontact" className="img-fluid" src={img5} alt="Images" />
+      </center>
+
       <div className="empty">
         <h5>
           Thanks for taking the time to reach out. How can I help you today?
         </h5>
-        <section className="formsection">
-          <form class="row g-5">
+        <section className="formsection"> 
+
+          <form method="post" class="row g-5">
             <div class="col-md-6">
               <label for="text" class="form-label">
                 Name
@@ -33,19 +69,25 @@ function Contact(){
               <input
                 type="text"
                 class="form-control"
-                id="inputtext"
-                placeholder="Name"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+                value={user.name}
+                onChange={handleInputs}
               />
             </div>
             <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">
+              <label for="inputEmail" class="form-label">
                 Email
               </label>
               <input
                 type="email"
                 class="form-control"
-                id="inputEmail4"
+                id="email"
+                name="email"
                 placeholder="Email"
+                value={user.email}
+                onChange={handleInputs}
               />
             </div>
             <div class="col-md-6">
@@ -55,15 +97,24 @@ function Contact(){
               <input
                 type="text"
                 class="form-control"
-                id="inputCity"
+                id="City"
+                name="city"
                 placeholder="Eg.Indore"
+                value={user.city}
+                onChange={handleInputs}
               />
             </div>
             <div class="col-md-6">
               <label for="inputState" class="form-label">
                 State
               </label>
-              <select id="inputState" class="form-select">
+              <select
+                id="inputState"
+                class="form-select"
+                value={user.state}
+                onChange={handleInputs}
+                name="state"
+              >
                 <option selected>Choose...</option>
                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                 <option value="Andaman and Nicobar Islands">
@@ -116,17 +167,27 @@ function Contact(){
                   type="long text"
                   class="form-control"
                   id="inputdescription"
+                  name="message"
                   placeholder="Message"
+                  value={user.message}
+                  onChange={handleInputs}
                 />
               </div>
 
               <div class="col-12">
-                <button type="submit" class="btn btn-primary">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  id="submit"
+                  value="register"
+                  onClick={PostData}
+                >
                   SUBMIT
                 </button>
               </div>
             </center>
           </form>
+          
         </section>
       </div>
     </div>
