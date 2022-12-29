@@ -4,9 +4,10 @@ import img5 from '../Images/boy.png'
 import { useState } from 'react'
 import axios from 'axios'
 import './ContactStyle.css'
-import { Link,useNavigate } from 'react-router-dom'
+import { Link,useNavigate} from 'react-router-dom'
 
 function Contact(){
+  
   const [user, setUser] = useState({
     name: "",
     email: "",
@@ -33,17 +34,20 @@ function Contact(){
       state:user.state,
       message:user.message
     }
-    axios.post('https://potfolio-backend-q9ga.vercel.app/contact',newNote).then((res)=>{
-console.log(res);
-alert("Your Response has been recorded successfuly");
-    }).catch((error)=>{
-      console.log(error)
-      alert("Some error occured")
-    })
+    axios
+      .post("https://potfolio-backend-q9ga.vercel.app/contact", newNote)
+      .then((res) => {
+        console.log(res);
+        alert("Your Response has been recorded successfuly");
+        navigate('/home');
+      })
+      .catch((error) => {
+        console.log(error);
+        alert("Some error occured");
+      });
   };
 
   const navigate = useNavigate();
-
   return (
     <div className="container-fluid" id="jst">
       <div>
