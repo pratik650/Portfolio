@@ -2,6 +2,7 @@ import React from 'react'
 import './Language.css'
 import { Cards } from './card'
 import { Studentdata } from './Skillsdata'
+import arrow from '../Images/arow1.png'
 
 export const Language = () => {
   const slideLeft = () => {
@@ -18,7 +19,9 @@ export const Language = () => {
       <center>
         <div className="Acheader">Skills & Languages</div>
       </center>
+      <img className='key' src={arrow} alt="img" />
       <div className='Maincontainer'>
+       
       <div className='wrapper'>
      
         <Cards
