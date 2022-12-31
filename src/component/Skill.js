@@ -2,7 +2,6 @@ import React from 'react'
 import './Skill.css'
 import { Achievements } from './Achievements'
 import Typewriter from 'typewriter-effect'
-import boy from '../Images/boii2.png'
 import image1 from '../Images/pngwing.png'
 
 export const Skill = () => {
@@ -28,16 +27,16 @@ export const Skill = () => {
             </h3>
           </header>
           <div id="Headingfordp1">
-            <h4 id="head1">Back End</h4>
+            <h4 id="head1">Front End</h4>
             <p>
               I can develop a good User Interface using front end MERN
               technologies and non coding technologies too.
             </p>
           </div>
           <div id="Headingfordp2">
-            <h4 id="head2">Front End</h4>
+            <h4 id="head2">Back End</h4>
             <p>
-             Have a good understanding of database connectivity, data manipulation and managment strategies.
+             I have a good understanding of database connectivity, data manipulation and managment strategies.
             </p>
           </div>
         </center>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Projects.css'
-
+import { Language } from './Language'
 
 export const Projects = () => {
   return (
@@ -16,10 +16,12 @@ export const Projects = () => {
           <li>Student's Corner</li>
           <li>Quiz Application</li>
           <li>Spotify Clone</li>
+          <li>Scietific Calculator</li>
         </ul>
         </div>
-       
       </div>
+      <Language/>
     </div>
+    
   );
 }

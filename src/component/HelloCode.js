@@ -11,7 +11,7 @@ export const HelloCode = () => {
     <div id="Typewriter">
     <Typewriter
   options={{
-    strings: ['Hello Peers', 'My name is Pratik Kumbhkar','I am The Web Developer and Content designer'],
+    strings: ['Hello Folks!', 'I am Pratik Kumbhkar','A Passionate Web Developer and Content Designer'],
     autoStart: true,
     loop: true,
   }}

@@ -14,8 +14,7 @@ export const Footer = () => {
               <h4>Pratik Kumbhkar</h4>
               <ul>
                 <li>
-                  Hello I am an Enthusiast web developer and content creator I
-                  love to design the website with hight ui experience.
+                  I am a passionate website developer, let's connect together and colaborate to develop something intresting!!
                 </li>
               </ul>
             </div>
@@ -61,7 +60,7 @@ export const Footer = () => {
 		<center><hr className='linelast'></hr></center>
 		
         <div className='footer_bottom'>
-          <h5>© pratikprajapati designs</h5>
+          <h6>© 2022-present pratik's design</h6>
         </div>
       </footer>
     </div>
