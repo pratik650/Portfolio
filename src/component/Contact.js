@@ -3,9 +3,9 @@ import img2 from '../Images/cross.png'
 import img5 from '../Images/boy.png'
 import { useState } from 'react'
 import axios from 'axios'
-import './ContactStyle.css'
+import './CSS/ContactStyle.css'
 import { Link,useNavigate} from 'react-router-dom'
-import emailjs, { send } from '@emailjs/browser';
+
 
 function Contact(){
   const form = useRef();
@@ -50,17 +50,7 @@ function Contact(){
 
   const navigate = useNavigate();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_rp1smib', 'template_yg2zbqw', form.current, '9JA_xA7PymRrd99u2')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset();
-  };
+ 
 
   return (
     <div className="container-fluid" id="jst">
@@ -79,7 +69,7 @@ function Contact(){
         </h5>
         <section className="formsection"> 
 
-          <form method="post" class="row g-5"  ref={form} onSubmit={sendEmail}>
+          <form method="post" class="row g-5"  ref={form} >
             <div class="col-md-6">
               <label for="text" class="form-label">
                 Name
@@ -199,7 +189,7 @@ function Contact(){
                   id="submit"
                   value="register"
                   onClick={PostData}    
-                  onSubmit={sendEmail}             
+                             
                 >
                   SUBMIT
                 </button>

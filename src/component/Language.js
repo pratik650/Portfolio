@@ -1,5 +1,5 @@
 import React from 'react'
-import './Language.css'
+import './CSS/Language.css'
 import { Cards } from './card'
 import { Studentdata } from './Skillsdata'
 import arrow from '../Images/arow1.png'
@@ -31,7 +31,7 @@ export const Language = () => {
         link = {Studentdata[0].link}
         />
         <Cards
-        id="card2"
+        
         imgsrc = {Studentdata[1].imgsrc}
         title  = {Studentdata[1].title}
         description = {Studentdata[1].description}
@@ -48,6 +48,12 @@ export const Language = () => {
         title  = {Studentdata[2].title}
         description = {Studentdata[2].description}
         link = {Studentdata[2].link}
+        />
+        <Cards
+        imgsrc = {Studentdata[4].imgsrc}
+        title  = {Studentdata[4].title}
+        description = {Studentdata[4].description}
+        link = {Studentdata[4].link}
         />
        
         </div>

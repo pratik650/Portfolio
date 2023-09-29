@@ -1,5 +1,5 @@
 import React from 'react'
-import './Achieve.css'
+import './CSS/Achieve.css'
 import { Projects } from './Projects'
 
 
@@ -12,8 +12,8 @@ export const Achievements = () => {
       <div className="div2Ach">
         <ul>
           <li>Smart India Hackathon Finalist</li>
-          <li>Codechef Executive Member</li>
-          <li>150+ questions on Geeks for Geeks</li>
+          <li>Codechef competetive programming Executive Member</li>
+          <li>500+ Coding questions on Codechef,Leetcode,Gfg</li>
         </ul>
       </div>
       <Projects />

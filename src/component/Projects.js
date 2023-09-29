@@ -1,5 +1,5 @@
 import React from 'react'
-import './Projects.css'
+import './CSS/Projects.css'
 import { Language } from './Language'
 
 export const Projects = () => {

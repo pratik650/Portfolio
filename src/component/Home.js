@@ -1,23 +1,23 @@
 import React from 'react'
-import './HomeStyle.css'
+import './CSS/HomeStyle.css'
 import img from '../Images/logo2.png'
-import {Parallax} from "react-parallax"
+import { Parallax } from "react-parallax"
 import video from '../Images/Hacker.mp4'
 import { Footer } from './Footer'
 import { Skill } from './Skill'
-import {Link} from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
+import Typewriter from 'typewriter-effect'
 
 export const Home = () => {
-  
+
   return (
     <div className="container-fluid" id="contmain">
       <div className="navbar fixed-top">
         <img id="pklogo" className="img-fluid" src={img} alt="Images" />
 
         {/* Say hello button at the top */}
-<Link to="/contact">
-       
+        <Link to="/contact">
+
           <div id="container">
             <button id="btn1" class="learn-more">
               <span class="circle" aria-hidden="true">
@@ -26,7 +26,7 @@ export const Home = () => {
               <span class="button-text">Say Hello</span>
             </button>
           </div>
-       
+
         </Link>
       </div>
 
@@ -41,23 +41,32 @@ export const Home = () => {
 
       <div id="Introdiv">
         {/* Introdiv part 1 */}
-                
-              <p id="heading">HEY, I'M PRATIK KUMBHKAR</p>
-            
-            <center>
-              <p id="Paragraph">
-                I am an undergraduate professional, a web design enthusiast and
-                love translating design onto our screens with the help of code.
-                Implementation is easy but designing an interface which speaks
-                with the user is the difficult part & I love my profession as it's my passion.
-              </p>
-            </center>
-   
+
+        <div id="heading">
+  <Typewriter
+    options={{
+      strings: [
+        '<span style="color: #5DEDCC;">Hey!!</span>',
+        '<span style="color: #5DEDCC;">I\'M PRATIK KUMBHKAR...</span>',
+      ],
+      autoStart: true,
+      loop: true,
+    }}
+  />
+</div>
+
+        <center>
+          <p id="Paragraph">
+            A Results-oriented and analytically-driven individual with a passion for problem-solving and leveraging quantitative models which drive effective solutions. Presently Seeking a challenging opportunity where I can apply my expertise in analyzing processes, optimizing efficiency, and generating actionable insights to contribute to the organizational success and its growth along with mine.
+
+          </p>
+        </center>
+
       </div>
       <Skill/>
-      
-      <Footer/>
-      
+
+      <Footer />
+
     </div>
   );
 }

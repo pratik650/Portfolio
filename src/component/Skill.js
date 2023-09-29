@@ -1,8 +1,8 @@
 import React from 'react'
-import './Skill.css'
+import './CSS/Skill.css'
 import { Achievements } from './Achievements'
 import Typewriter from 'typewriter-effect'
-import image1 from '../Images/pngwing.png'
+import image1 from '../Images/pratik.jpg'
 
 export const Skill = () => {
   return (
@@ -18,7 +18,7 @@ export const Skill = () => {
             <h3 className="typewriterh4">
               <Typewriter
                 options={{
-                  strings: ["What", "can", "I do",],
+                  strings: ["My Tech-Stacks",],
                   color:"#5DEDCC",
                   autoStart: true,
                   loop: true,
@@ -27,16 +27,15 @@ export const Skill = () => {
             </h3>
           </header>
           <div id="Headingfordp1">
-            <h4 id="head1">Front End</h4>
+            <h4 id="head1">Website Development</h4>
             <p>
-              I can develop a good User Interface using front end MERN
-              technologies and non coding technologies too.
+            "I'm proficient in the MERN (MongoDB, Express.js, React, Node.js) stack, which equips me to develop modern, data-driven web applications efficiently."
             </p>
           </div>
           <div id="Headingfordp2">
-            <h4 id="head2">Back End</h4>
+            <h4 id="head2">Android Development</h4>
             <p>
-             I have a good understanding of database connectivity, data manipulation and managment strategies.
+            Experienced in designing and building native Android applications using Java.Proficient in developing user-friendly and responsive Android interfaces that adhere to best UI/UX practices.
             </p>
           </div>
         </center>

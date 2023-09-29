@@ -5,6 +5,7 @@ import { HelloCode } from "./component/HelloCode";
 
 
 export default function App() {
+  
   const particlesInit = async (main) => {
     await loadFull(main);
   };

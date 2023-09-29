@@ -1,5 +1,5 @@
 import React from 'react'
-import './Language.css'
+import './CSS/Language.css'
 
 
 export const Cards = (props) => {

@@ -1,8 +1,7 @@
 import React from 'react'
-import github from '../Images/github.png'
-import './footer.css'
-import  LinkedIn  from '../Images/linkedin.png';
-import Instagram from '../Images/insta.png'
+
+import './CSS/footer.css'
+
 
 export const Footer = () => {
   return (
@@ -35,7 +34,7 @@ export const Footer = () => {
               <h4>Hire me!</h4>
               <ul>
                 <li>
-                  <a href="https://drive.google.com/file/d/1rpL3f8p44zkWDhqvYietFCK0dErC1uQv/view?usp=sharing">
+                  <a href="https://drive.google.com/file/d/1UESGWej-qDN7CnyVYqNNF5qg0NhOJxXX/view?usp=sharing">
                     Resume
                   </a>
                 </li>
